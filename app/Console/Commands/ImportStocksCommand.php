@@ -16,7 +16,6 @@ class ImportStocksCommand extends Command
     public function handle(ApiService $apiService): int
     {
         $dateFrom = $this->argument('dateFrom');
-        $limit = $this->option('limit');
 
         $this->info("Начало импорта данных склада на {$dateFrom}");
 
