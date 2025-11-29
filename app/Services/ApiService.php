@@ -52,7 +52,7 @@ class ApiService
             $allData = array_merge($allData, $data['data']);
             $page++;
 
-            // Пауза между запросами чтобы не перегружать API
+            // Пауза между запросами чтобы не перегружать API 
             sleep(1);
 
         } while (count($data['data'])  === 500);
